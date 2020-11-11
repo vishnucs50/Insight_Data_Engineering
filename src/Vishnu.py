@@ -25,7 +25,7 @@ size_df=len(df_select.index)
 
 i = 0
 #  Output File where the result will be written.
-with open('../output/report.csv', 'w', newline='') as file:
+with open('../output/report.csv', 'w') as file:
     while i < len(indexes):
         j = int(indexes[i])  # Set Base variable value
         k = 0
@@ -63,8 +63,8 @@ with open('../output/report.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(row_list)  # Write into the output file
         # Clear the arrays
-        val_pop00.clear()
-        val_pop10.clear()
+        #val_pop00.clear()
+        #val_pop10.clear()
         i = i + 1
 
 
